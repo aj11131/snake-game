@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Hello!</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <!-- import the webpage's javascript file -->
+    <script type="module" src="/script.js" defer></script>
+  </head>  
+  <body class="disable-dbl-tap-zoom">
+    <div id="area">
+      <div id="head"></div>
+      <div id="game-start">
+        <h1 id="snake">Snake</h1>
+        <button id="start">Start Game</button>
+      </div>
+      <div id="game-over">
+        <h2>Game Over...</h2>
+        <button id="again">Play Again?</button>
+      </div>
+    </div>
+    <div id="score-container">
+      <p>High: </p>
+      <p id="high-score"></p>
+      <p>Score: </p>
+      <p id="score"></p>
+    </div>
+    
+    <div id="arrow-container">
+      <div id="top-buttons">
+        <button class="arrow" id="arrow-up"><i class="fas fa-arrow-up"></i></button>
+      </div>
+      <div id="middle-buttons">
+        <button class="arrow" id="arrow-left"><i class="fas fa-arrow-left"></i></button>
+        <button class="arrow" id="arrow-right"><i class="fas fa-arrow-right"></i></button>
+      </div>
+      <div id="bottom-buttons">
+        <button class="arrow" id="arrow-down"><i class="fas fa-arrow-down"></i></button>
+      </div>
+    </div>
+  </body>
+</html>

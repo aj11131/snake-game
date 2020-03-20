@@ -1,0 +1,116 @@
+body {
+  background-color: black;
+  font-family: 'Roboto Mono', monospace;
+  color: white;
+  margin: 0;
+}
+
+.disable-dbl-tap-zoom {
+  touch-action: manipulation;
+}
+
+#area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  position: relative;
+  width: 600px;
+  height: 600px;
+  border: 3px solid white;
+}
+
+#head {
+  display: none;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+
+.segmentSmall {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  background-color: green;
+}
+
+.segmentLarge {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: green;
+}
+
+#food {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: red;
+}
+
+#snake {
+  font-family: 'Roboto Mono', monospace;
+}
+
+#arrow-container {
+  display: none;
+  flex-direction: column;
+  width: 312px;
+  margin: 0 auto;
+}
+
+.arrow {
+  height: 15vh;
+  width: 50%;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+
+#top-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#middle-buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+#bottom-buttons {
+  display: flex;
+  justify-content: center;
+}
+
+#score-container {
+  margin: 0 auto;
+  width: 312px;
+  display: flex;
+  justify-content: space-between
+}
+
+#game-start {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+#game-over {
+  display: none;
+  flex-direction: column;
+}
+
+button {
+  background: none;
+	color: white;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  border-radius: 5px;
+  border: 2px grey solid;
+  padding: 0.75em;
+}
+
+button:hover{
+  border-color: white;
+}
